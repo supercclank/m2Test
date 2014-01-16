@@ -50,6 +50,19 @@ import edu.gatech.oad.antlab.pkg2.*;
      * out to the console     
      * 
      */
+
+    /*
+    Commit your changes and push back to Git.
+    Now each team member should edit the file
+    edu.gatech.cs2340.antlab.pkg1.AntLabMain.java at the line indicated.
+    You are basically sending your name to the constructor of the class you
+    edited previously. Since you are all editing the same file, you will need
+    to handle any merge requirements yourselves. You might want to get together
+    and commit files to force a merge so you get some practice doing merges.
+    You will run into them during the project.
+
+
+    */
     public void printOutMessage() {
         
         String toPrint = 
