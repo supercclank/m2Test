@@ -50,19 +50,6 @@ import edu.gatech.oad.antlab.pkg2.*;
      * out to the console     
      * 
      */
-
-    /*
-    Commit your changes and push back to Git.
-    Now each team member should edit the file
-    edu.gatech.cs2340.antlab.pkg1.AntLabMain.java at the line indicated.
-    You are basically sending your name to the constructor of the class you
-    edited previously. Since you are all editing the same file, you will need
-    to handle any merge requirements yourselves. You might want to get together
-    and commit files to force a merge so you get some practice doing merges.
-    You will run into them during the project.
-
-
-    */
     public void printOutMessage() {
         
         String toPrint = 
@@ -80,27 +67,16 @@ import edu.gatech.oad.antlab.pkg2.*;
 		  //and gburdell3 with your gt id
 		  Person3 p3 = new Person3("P3");
 		  toPrint += p3.toString("gburdell3");
-<<<<<<< HEAD
-                  //Person4 replace P4 with your name
-                  //and gburdell4 with your gt id
-                  Person4 p4 = new Person4("Son Tran");
-                  toPrint += p4.toString("stran7");
-                  //Person5 replace P4 with your name
-                  //and gburdell5 with your gt id
-                  Person5 p5 = new Person5("P5");
-                  toPrint += p5.toString("gburdell5");
-=======
       //Person4 replace P4 with your name
       //and gburdell4 with your gt id
-      Person4 p4 = new Person4("P4");
-      toPrint += p4.toString("gburdell4");
+      Person4 p4 = new Person4("Son Tran");
+      toPrint += p4.toString("stran7");
       //Person5 replace P4 with your name
       //and gburdell5 with your gt id
       Person5 p5 = new Person5("Cory Brzycki");
       toPrint += p5.toString("cbrzycki3");
->>>>>>> 0041a671369a60a48d043356cef243d7ef857f03
 		  
-        System.out.println(toPrint);
+      System.out.println(toPrint);
         
         
     }
