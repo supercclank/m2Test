@@ -1,0 +1,11 @@
+//Default Taks set to jar
+defaultTasks "jar"
+
+//Apply Java Plugin
+apply plugin: "java"
+
+jar {
+    mainfest {
+        attributes "Main-Class" : "AntLabMain"
+    }
+}
