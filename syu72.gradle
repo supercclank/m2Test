@@ -1,26 +1,21 @@
-//Set a default task, so if I don't give a task, this (these) will be executed
-defaultTasks  'taskA'
+//Set a default task
+defaultTasks  "jar"
 
 //Import a bunch of java related tasks like compileJava, compileJavaTest, clean, javadoc, jar
-apply plugin: 'java'
-
-
-task taskA (dependsOn: compileJava) {
-      
-}
+apply plugin: "java"
 
 //Set up some variables (properties)
 sourceCompatibility = 1.7
-version = '1.0'
+version = "1.0"
 
 dependencies {
-  compile fileTree(dir: 'lib', include: 'resources.jar')
+  compile fileTree(dir: "lib", include: "resources.jar")
 }
 
 //Define the contents of the jar file
 jar {
     manifest {
-        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version , 'Main-Class' : 'AntLabMain'
+        attributes "Implementation-Title": "Gradle PersonM2", "Implementation-Version": version , "Main-Class" : "AntLabMain"
     }
 }
 
