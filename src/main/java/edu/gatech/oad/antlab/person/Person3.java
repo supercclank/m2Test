@@ -46,7 +46,7 @@ public class Person3 {
 		String reversed = "";
 		
 		for (int i = 0; i < length; i++) {
-			reversed = reversed.concat(input.charAt(length - i));
+			reversed = reversed.concat("" + input.charAt(length - i));
 				
 		}
 		
