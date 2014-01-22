@@ -44,7 +44,7 @@ public class Person2 {
 			int x =0;
 			do {
 				x = randGen.nextInt(length);
-			} while(charArray[x] != '\0');
+			} while(charArray[x] == '\0');
 			randString += charArray[x];
 			charArray[x] = '\0';
 			chars--; 
