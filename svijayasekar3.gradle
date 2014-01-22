@@ -1,0 +1,23 @@
+defaultTasks  'jar'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+version = '1.0'
+
+dependencies {
+  compile fileTree(dir: 'lib', include: 'resources.jar');
+}
+
+jar {
+	  into('lib') {
+        from 'libs'
+    }
+    manifest {
+        attributes 'Implementation-Title': 'Gradle PersonBuild', 'Implementation-Version': version , 'Main-Class' : 'edu/gatech/oad/antlab/pkg1/AntLabMain', 'Class-Path' : '../../lib/resources.jar'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
