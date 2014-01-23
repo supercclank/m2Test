@@ -5,7 +5,7 @@ defaultTasks 'jar'
 apply plugin: 'java'
 
 dependencies {
-    compiles fileTree(dir: 'lib', include: 'resources.jar');
+    compile fileTree(dir: 'lib', include: 'resources.jar');
 }
 
 //Set up some variables (properties)
