@@ -1,0 +1,34 @@
+// Without command-line parameters, do this task
+defaultTasks 'jar'
+
+// Include java-related utilities and commands
+apply plugin: 'java'
+
+// Variables
+sourceCompatability = 1.7   // java version
+version = '1.0'             // jar version
+
+
+dependencies {
+    compile fileTree(dir: 'lib', include: 'resources.jar')
+
+}
+
+// Set up what goes in jar
+jar {
+    // Manifest file
+    manifest {
+        attributes  'Implementation-Title' : 'ebailey34 Gradle Build', 
+                    'Implementation-Version' : version,
+                    'Main-Class' : 'edu/gatech/oad/antlab/pkg1/AntLabMain',
+                    'Class-Path' : '../../lib/resources.jar'
+
+    }
+
+}
+
+// Does something automagically if downloads are needed
+repositories {
+    mavenCentral()
+
+}
