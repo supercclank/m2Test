@@ -15,7 +15,10 @@ dependencies {
 //Define the contents of the jar file
 jar {
     manifest {
-        attributes "Implementation-Title": "Gradle PersonM2", "Implementation-Version": version , "Main-Class" : "AntLabMain"
+        attributes "Implementation-Title": "Gradle PersonM2", 
+        "Implementation-Version": version ,
+        "Main-Class" : "edu/gatech/oad/antlab/pkg1/AntLabMain",
+        "Class-Path" : "../../lib/resources.jar"
     }
 }
 
