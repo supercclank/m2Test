@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
-Implementation-Title: Gradle Quickstart
+Implementation-Title: Gradle PersonM2
 Implementation-Version: 1.0
-Main-Class: AntLabMain
+Main-Class: edu/gatech/oad/antlab/pkg1/AntLabMain
 Class-Path: ../../lib/resources.jar
 
